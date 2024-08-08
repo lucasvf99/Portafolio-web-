@@ -1,0 +1,407 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f3f4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: black !important;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  box-shadow: 0px 0px 4px 0px #82e0aa;
+  border: 1px solid #CCCDFF;
+  padding: 5px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-style: normal;
+  width: 50%;
+  margin: 10px;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  background-color: #82e0aa;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+nav .nav-barra {
+  display: flex;
+  position: fixed;
+  background-color: #CCCDFF;
+  bottom: 0;
+  justify-content: space-around;
+  padding: 5px;
+  border-radius: 10px;
+  width: 90%;
+}
+nav .nav-barra li {
+  list-style: none;
+  margin: 5px;
+}
+nav .nav-barra li span {
+  border-radius: 50%;
+  padding: 10px;
+}
+nav .nav-barra li span:hover {
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #82e0aa;
+}
+
+.primera-seccion {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.primera-seccion .cont-img {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  animation: fadeInUp;
+  animation-duration: 2s;
+}
+.primera-seccion .cont-img img {
+  width: 70%;
+  border-radius: 29%;
+}
+.primera-seccion .cont-info {
+  margin: 40px;
+  text-align: center;
+  animation: fadeInDown;
+  animation-duration: 2s;
+  color: black;
+}
+.primera-seccion .cont-info div h4 {
+  margin-top: 55px;
+}
+.primera-seccion .cont-info div h1 {
+  font-size: 30px;
+}
+.primera-seccion .cont-info div p {
+  margin-top: 15px;
+}
+.primera-seccion .cont-botones {
+  margin: 30px;
+}
+.primera-seccion .cont-botones button {
+  margin-right: 10px;
+}
+
+#sec-conoceme {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 150px;
+}
+#sec-conoceme .desc-conoceme {
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+#sec-conoceme .titulo-conoceme {
+  text-align: center;
+  letter-spacing: 2px;
+}
+#sec-conoceme .caja-exp {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: center;
+  justify-content: space-around;
+  margin: auto;
+}
+#sec-conoceme .caja-exp .cart-exp {
+  text-align: center;
+  margin: 15px;
+  border-radius: 10%;
+  box-shadow: 0px 0px 10px 0px #82e0aa;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+#sec-conoceme .caja-exp .cart-exp span {
+  margin: 20px;
+}
+#sec-conoceme .caja-exp .cart-exp h4 {
+  margin-bottom: 20px;
+}
+#sec-conoceme p {
+  text-align: center;
+  margin: 0px 50px 50px 50px;
+}
+
+#experiencia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 150px;
+}
+#experiencia p {
+  text-align: center;
+  margin-bottom: 50px;
+}
+#experiencia h2 {
+  letter-spacing: 2px;
+}
+#experiencia .exp-lenguajes {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  justify-content: space-around;
+  box-shadow: 0px 0px 10px 0px #82e0aa;
+  padding: 25px;
+  margin: 40px;
+}
+#experiencia .exp-lenguajes div .lenguajes {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+#experiencia .exp-lenguajes div .lenguajes .material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  color: #82e0aa;
+}
+
+#servicios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#servicios h3 {
+  letter-spacing: 2px;
+}
+#servicios .servicios-cart {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  width: 80%;
+  justify-content: center;
+  justify-content: space-around;
+  margin: 20px;
+}
+#servicios .servicios-cart .cart-service {
+  text-align: center;
+  box-shadow: 0px 0px 10px 0px #82e0aa;
+  margin: 30px 0px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+#servicios .servicios-cart .cart-service h4 {
+  letter-spacing: 1px;
+}
+#servicios .servicios-cart .modal-conteiner {
+  position: fixed;
+  z-index: 1;
+  display: none;
+  background: linear-gradient(rgba(99, 103, 114, 0.75), rgba(99, 103, 114, 0.75));
+  inset: 0;
+  place-items: center;
+}
+#servicios .servicios-cart .modal-conteiner .modal-content {
+  margin: 10px;
+  padding: 30px;
+  background-color: #f2f3f4;
+  opacity: 1 !important;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10%;
+  height: auto;
+}
+#servicios .servicios-cart .modal-conteiner .modal-content li {
+  list-style: none;
+}
+#servicios .servicios-cart .modal-conteiner .modal-content li .bx {
+  color: #82e0aa;
+  margin-right: 10px;
+}
+#servicios .servicios-cart .modal-conteiner .modal-content button {
+  align-self: end;
+  width: 30px;
+  border-radius: 50%;
+}
+#servicios .servicios-cart .modal-conteiner .modal-content h4 {
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+#servicios .servicios-cart .modal-conteiner .modal-content p {
+  margin-bottom: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.modal-active {
+  display: flex !important;
+  opacity: 1;
+  visibility: visible;
+  animation: fadeIn;
+  animation-duration: 2s;
+}
+
+#mis-trabajos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+#mis-trabajos .botones-proyectos {
+  display: flex;
+}
+#mis-trabajos .botones-proyectos button {
+  width: auto;
+  padding: 10px;
+}
+#mis-trabajos .botones-proyectos button:hover {
+  background-color: #82e0aa;
+}
+#mis-trabajos h4 {
+  margin-bottom: 50px;
+}
+#mis-trabajos .cont-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+}
+#mis-trabajos .cont-cart .cart-trabajo {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 50px 0px;
+  box-shadow: 0px 0px 10px 0px #CCCDFF;
+  padding: 20px;
+}
+#mis-trabajos .cont-cart .cart-trabajo div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+#mis-trabajos .cont-cart .cart-trabajo div h3 {
+  letter-spacing: 2px;
+  margin-top: 30px;
+  text-align: center;
+}
+#mis-trabajos .cont-cart .cart-trabajo div button {
+  width: 50%;
+  align-self: center;
+}
+#mis-trabajos .cont-cart .cart-trabajo .img-proyect {
+  width: 80%;
+}
+#mis-trabajos .cont-cart .cart-trabajo .img-proyect img {
+  width: 100%;
+}
+
+.ocultar-cart {
+  animation: bounceOut;
+  animation-duration: 2s;
+  display: none !important;
+}
+
+.animation-cart {
+  animation: fadeIn;
+  animation-duration: 2s;
+}
+
+.animation-cart-out {
+  animation: fadeOut;
+  animation-duration: 2s;
+}
+
+#contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 50px;
+  margin: 50px 10px;
+}
+#contacto h2 {
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+#contacto .cont-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+  width: 60%;
+  justify-content: space-between;
+}
+#contacto .cont-contacto .cart-contacto {
+  border: 2px solid #82e0aa;
+  padding: 40px;
+  border-radius: 20%;
+  box-shadow: 0px 0px 10px 0px #82e0aa;
+  text-align: center;
+  width: 80%;
+}
+#contacto .cont-contacto .cart-contacto .material-symbols-outlined {
+  font-size: 50px;
+}
+#contacto .cont-contacto .cart-contacto p {
+  margin: 10px 0px;
+}
+#contacto .cont-contacto .cart-contacto button {
+  border-radius: 10%;
+}
+#contacto .cont-contacto .cart-contacto .bx {
+  font-size: 50px;
+}
+
+.bx {
+  font-size: 25px;
+}
+
+.scroll {
+  background-color: #82e0aa;
+}
+
+footer {
+  background-color: #82e0aa;
+  height: 200px;
+  text-align: center;
+}
+footer h2 {
+  padding: 20px;
+}
+footer .cont-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+}
+footer .cont-icons i:hover {
+  color: #CCCDFF;
+}
+
+/*# sourceMappingURL=styles.css.map */
