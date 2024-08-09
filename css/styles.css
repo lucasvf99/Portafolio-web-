@@ -279,8 +279,9 @@ nav .nav-barra li span:hover {
 #mis-trabajos .botones-proyectos button:hover {
   background-color: #82e0aa;
 }
-#mis-trabajos h4 {
+#mis-trabajos h2 {
   margin-bottom: 50px;
+  letter-spacing: 1px;
 }
 #mis-trabajos .cont-cart {
   display: flex;
@@ -298,6 +299,7 @@ nav .nav-barra li span:hover {
   margin: 50px 0px;
   box-shadow: 0px 0px 10px 0px #CCCDFF;
   padding: 20px;
+  transition: 2s;
 }
 #mis-trabajos .cont-cart .cart-trabajo div {
   width: 100%;
@@ -402,6 +404,113 @@ footer .cont-icons {
 }
 footer .cont-icons i:hover {
   color: #CCCDFF;
+}
+
+@media screen and (min-width: 760px) {
+  .nav-barra {
+    width: 70% !important;
+    transition: 3s;
+  }
+  .primera-seccion {
+    flex-direction: row;
+    margin-top: 100px;
+    transition: 3s;
+  }
+  .primera-seccion .cont-info {
+    width: 70%;
+  }
+  .titulo-conoceme h2 {
+    font-size: 25px;
+  }
+  .caja-exp {
+    flex-direction: row !important;
+  }
+  #servicios h2 {
+    margin-bottom: 100px;
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+  #servicios .servicios-cart {
+    flex-direction: row !important;
+  }
+  #servicios .servicios-cart .cart-service {
+    width: 30%;
+  }
+  #servicios .servicios-cart .modal-conteiner {
+    justify-content: center;
+  }
+  #servicios .servicios-cart .modal-conteiner .modal-content {
+    width: 50% !important;
+    height: auto !important;
+    align-items: center;
+    padding: 50px !important;
+  }
+  #servicios .servicios-cart .modal-conteiner .modal-content .cont-modal {
+    width: 70%;
+    text-align: center;
+  }
+  #servicios .servicios-cart .modal-conteiner .modal-content .list-modal {
+    align-self: flex-start;
+  }
+  .cont-contacto {
+    flex-direction: row !important;
+    width: 100% !important;
+    justify-content: space-around !important;
+  }
+  .cont-contacto .cart-contacto {
+    width: 25% !important;
+  }
+}
+@media screen and (min-width: 1270px) {
+  .nav-barra {
+    width: 45% !important;
+  }
+  .primera-seccion {
+    column-gap: 0px !important;
+  }
+  .primera-seccion .cont-img {
+    width: 40% !important;
+    margin: 0px;
+  }
+  .cont-info {
+    width: 45% !important;
+    margin: 0 !important;
+  }
+  .cart-exp {
+    width: 50% !important;
+  }
+  .desc-conoceme {
+    width: 50%;
+    margin-top: 100px !important;
+    font-size: 20px !important;
+    letter-spacing: 1px;
+  }
+  .modal-conteiner {
+    justify-content: center;
+  }
+  .modal-conteiner .modal-content {
+    width: 50% !important;
+    height: auto !important;
+    align-items: center;
+    padding: 50px !important;
+  }
+  .modal-conteiner .modal-content .cont-modal {
+    width: 70%;
+    text-align: center;
+  }
+  .modal-conteiner .modal-content .list-modal {
+    align-self: flex-start;
+  }
+  .exp-lenguajes {
+    width: 60% !important;
+  }
+  .cont-cart {
+    flex-direction: row !important;
+    column-gap: 50px;
+  }
+  .cont-cart .cart-trabajo {
+    width: 50% !important;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

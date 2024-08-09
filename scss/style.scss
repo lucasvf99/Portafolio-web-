@@ -297,8 +297,9 @@ nav{
                     background-color: $color-fondo-nav;
                 }
         }
-        h4{
+        h2{
             margin-bottom: 50px;
+            letter-spacing: 1px;
         }
         .cont-cart{
             display: flex;
@@ -315,6 +316,7 @@ nav{
                     margin: 50px 0px;
                     box-shadow: 0px 0px 10px 0px $fondo-nav;
                     padding: 20px;
+                    transition: 2s;
                         div{
                             width: 100%;
                             display: flex;
@@ -423,4 +425,130 @@ footer{
                     color: $fondo-nav;
                 }
         }
+}
+
+
+///// media query //////////
+
+@media screen and (min-width: 760px){
+
+    .nav-barra{
+        width: 70% !important;
+        transition: 3s;
+        
+    }
+
+    .primera-seccion{
+        flex-direction: row;
+        margin-top: 100px;
+        transition: 3s;
+            .cont-info{
+                width: 70%;
+            }
+    }
+    //sec- conoceme
+    .titulo-conoceme{
+        h2{
+            font-size: 25px;
+        }
+    }
+    .caja-exp{
+        flex-direction: row !important;
+    }
+    //servicios 
+   #servicios{
+    h2{
+        margin-bottom: 100px;
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+    .servicios-cart{
+        flex-direction: row !important;
+            .cart-service{
+                width: 30%;
+            }
+            .modal-conteiner{
+                justify-content: center;
+                .modal-content{
+                    width: 50% !important;
+                    height: auto !important;
+                    align-items: center;
+                    padding: 50px !important;
+                        .cont-modal{
+                            width:70%;
+                            text-align: center;
+                        }
+                        .list-modal{
+                            align-self: flex-start;
+                        }
+                   }
+              }
+    }
+   }
+  
+    //contacto 
+    .cont-contacto{
+        flex-direction: row !important;
+        width: 100% !important;
+        justify-content: space-around !important;
+            .cart-contacto{
+                width: 25% !important ;
+            }
+    }
+}
+
+@media screen and (min-width: 1270px){
+    .nav-barra{
+        width: 45% !important;
+    }
+   .primera-seccion{
+    column-gap: 0px !important;
+    .cont-img{
+        width: 40% !important;
+        margin: 0px;
+    }
+    }
+    .cont-info{
+        width: 45% !important;
+        margin: 0 !important;
+    }
+    //conoceme 
+   .cart-exp{
+    width: 50% !important;
+   }
+   .desc-conoceme{
+    width: 50%;
+    margin-top: 100px !important;
+    font-size: 20px !important ;
+    letter-spacing: 1px;
+   }
+   //servicios
+  .modal-conteiner{
+    justify-content: center;
+    .modal-content{
+        width: 50% !important;
+        height: auto !important;
+        align-items: center;
+        padding: 50px !important;
+            .cont-modal{
+                width:70%;
+                text-align: center;
+            }
+            .list-modal{
+                align-self: flex-start;
+            }
+       }
+  }
+   //experiencia 
+   .exp-lenguajes{
+    width: 60% !important;
+   }
+   // proyectos 
+   .cont-cart{
+    flex-direction: row !important;
+    column-gap: 50px;
+        .cart-trabajo{
+            width: 50% !important;
+        }
+   }
 }
