@@ -147,6 +147,11 @@ nav{
                         h4{
                             margin-bottom: 20px;
                         }
+                        button{
+                            a{
+                                display: block;
+                            }
+                        }
                 }
         }
         p{
@@ -328,8 +333,12 @@ nav{
                                 text-align: center;
                             }
                             button{
-                                width: 50%;
+                                width: 60%;
                                 align-self: center;
+                                    a{
+                                        display: block;
+                                    }
+                                
                             }
                         }
                     .img-proyect{

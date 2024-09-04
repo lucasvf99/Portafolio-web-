@@ -144,6 +144,9 @@ nav .nav-barra li span:hover {
 #sec-conoceme .caja-exp .cart-exp h4 {
   margin-bottom: 20px;
 }
+#sec-conoceme .caja-exp .cart-exp button a {
+  display: block;
+}
 #sec-conoceme p {
   text-align: center;
   margin: 0px 50px 50px 50px;
@@ -313,8 +316,11 @@ nav .nav-barra li span:hover {
   text-align: center;
 }
 #mis-trabajos .cont-cart .cart-trabajo div button {
-  width: 50%;
+  width: 60%;
   align-self: center;
+}
+#mis-trabajos .cont-cart .cart-trabajo div button a {
+  display: block;
 }
 #mis-trabajos .cont-cart .cart-trabajo .img-proyect {
   width: 80%;
